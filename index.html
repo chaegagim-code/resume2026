@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>신입 프론트엔드 김채가 프로필</title>
 </body>
+<!-- 프로필 그룹-->
 <div class="profile-group">
                 <div class="profile-image">
                     <img src="./KakaoTalk_20260529_114151952.jpg" alt="김채가 프로필 사진">
@@ -80,6 +81,112 @@
         <li class="education-item">2024.04~2025.06 (1년 3개월) 뚜레쥬르</li>
     </ol>
 </div>
+
+<!-- 성격 섹션 -->
+<div class="personality-container">
+    <h2 class="personality-title">성격</h2>
+    <!-- 성격 밑 가로선 (CSS로 구현) -->
+    <div class="personality-divider"></div>
+    
+    <!-- MBTI 항목 (좌우 배치 구조) -->
+    <div class="mbti-row">
+        <span class="mbti-label">MBTI</span>
+        <span class="mbti-value">ESTJ</span>
+    </div>
+    
+    <!-- 성격 특성 리스트 -->
+    <ul class="personality-list">
+        
+      
+        <li class="personality-item">
+            <div class="trait-name">외향성</div>
+            <!-- 바와 퍼센트를 감싸는 상자-->
+            <div class="progress-wrapper">
+               <!-- 게이지 바 -->
+                <div class="progress-bar bar-extroversion"></div>
+                <span class="percentage">55%</span>
+            </div>
+        </li>
+        
+        
+        <li class="personality-item">
+            <div class="trait-name">호감성</div>
+            <div class="progress-wrapper">
+                <div class="progress-bar bar-agreeableness"></div>
+                <span class="percentage">61%</span>
+            </div>
+        </li>
+        
+        
+        <li class="personality-item">
+            <div class="trait-name">성실성</div>
+            <div class="progress-wrapper">
+                <div class="progress-bar bar-conscientiousness"></div>
+                <span class="percentage">53%</span>
+            </div>
+        </li>
+        
+        
+        <li class="personality-item">
+            <div class="trait-name">정서적 불안정성</div>
+            <div class="progress-wrapper">
+                <div class="progress-bar bar-neuroticism"></div>
+                <span class="percentage">58%</span>
+            </div>
+        </li>
+        
+       
+        <li class="personality-item">
+            <div class="trait-name">경험에 대한 개방성</div>
+            <div class="progress-wrapper">
+                <div class="progress-bar bar-openness"></div>
+                <span class="percentage">54%</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+<!-- 자기소개 및 자격증 섹션 -->
+<div class="intro-container">
+
+    <!-- 자격증 부분 -->
+    <div class="cert-section">
+        <h2 class="cert-title">자격증</h2>
+        <p class="cert-content">포토샵 , 일러스트</p>
+    </div>
+
+    <!-- 프로젝트 목적 및 배경 -->
+    <div class="intro-section">
+       
+        <span class="intro-badge">프로젝트 목적 및 배경</span>
+        
+        <!-- 본문 내용 (강조체와 일반체 구분) -->
+        <p class="intro-highlight">
+            본 프로젝트는 프론트엔드 개발자로서 저의 첫출발과 앞으로의 성장<br>
+            방향성을 담은 &lt;기획 단계의 자기소개 웹페이지&gt;입니다.
+        </p>
+        <ul class="intro-list">
+            <li class="intro-item">국비지원 과정의 첫 단추,</li>
+            <li class="intro-item">HTML, CSS, Figma, GitHub 을 배우며<br>익히고 있습니다.</li>
+        </ul>
+    </div>
+
+    <!-- 개발자로서의 성장 방향성 -->
+    <div class="intro-section">
+       
+        <span class="intro-badge">개발자로서의 성장 방향성</span>
+        
+        <p class="intro-highlight">개발자로서 갖추고 싶은 저의 모습입니다.</p>
+        
+        <ul class="direction-list">
+            <li class="direction-item">기본에 충실한 개발자</li>
+            <li class="direction-item">소통의 벽을 낮추는 개발자</li>
+            <li class="direction-item">지속 가능한 성장을 하는 개발자</li>
+        </ul>
+    </div>
+
+</div> <!-- End of intro container -->
 
 
 </body>
