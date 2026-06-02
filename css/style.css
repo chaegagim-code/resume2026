@@ -1,0 +1,43 @@
+/* profile group -*/
+.profile-group {
+    display: flex;
+    width: 397px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    padding: 33px 41px;
+}
+
+.profile-image {
+    width: 250px;  
+    height: 300px; 
+    border-radius: 50%; 
+    overflow: hidden;   
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-title {
+    color: #253439;
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.profile-title .name {
+    color: #253439; 
+}
+
+.subtitle {
+    color: #B29E84;
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 500;
+    margin: 0;
+}
