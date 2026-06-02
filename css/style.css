@@ -1,12 +1,18 @@
-/* profile group -*/
+/* 프로필 그룹 -*/
 .profile-group {
-    display: flex;
-    width: 397px;
+display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;      
     gap: 15px; 
     padding: 33px 41px;
+    
+    width: 100%;
+    max-width: 397px;         
+    box-sizing: border-box;
+
+    margin: 40px auto 0 25vw; /* 위 40px, 오른쪽 auto, 아래 0, 왼쪽 12vw */
 }
+
 
 .profile-image {
     width: 250px;  
@@ -24,20 +30,18 @@
 .profile-title {
     color: #253439;
     text-align: center;
-    font-size: 32px; 
+    font-size: 30px; 
     font-weight: 700;
     line-height: 1.5;
     margin: 0;
 }
 
-.profile-title .name {
-    color: #253439; 
-}
-
 .subtitle {
     color: #B29E84;
     text-align: center;
-    font-size: 32px; 
+    font-size: 30px; 
     font-weight: 500;
     margin: 0;
 }
+
+
