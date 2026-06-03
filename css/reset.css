@@ -9,6 +9,7 @@ p,
 img,
 ul, 
 li,
+::before,
 
 * {
     box-sizing: border-box;

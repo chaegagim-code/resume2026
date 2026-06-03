@@ -186,7 +186,7 @@ display: flex;
     position: absolute;
     left: calc(25vw + 430px);
     top: 571px;
-    bottom: 450px;
+    bottom: 80px;
     width: 500px;
 }
 
@@ -258,6 +258,116 @@ display: flex;
     line-height: 1.5;
     text-align: left;
 }
+
+/* 성격 박스-*/
+
+.personality-container{
+    background-color: #719E82;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px 40px 30px;
+    box-sizing: border-box;
+
+    width: 420px;
+    height: 580px;
+
+    position: absolute;
+    left: 55vw;
+    top: 100px;
+    z-index: 1;
+}
+
+.personality-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.personality-divider{
+    width: 360PX;
+    height: 5PX;
+    background-color: #FFF;
+    flex-shrink: 0;
+}
+
+.mbti-row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mbti-label, .mbti-value{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.personality-list{
+    list-style-type: none;
+    padding:0%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.personality-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.trait-name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.progress-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.progress-bar{
+    background-color: #253439;
+    position: relative;
+    height: 12px;
+    border-radius: 4px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* 진짜 차오르는 흰색 게이지 선 */
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+/* 퍼센트 채우기 공식을 적용합니다 */
+.bar-extroversion::before { width: 55%; }
+.bar-agreeableness::before { width: 61%; }
+.bar-conscientiousness::before { width: 53%; }
+.bar-neuroticism::before { width: 58%; }
+.bar-openness::before { width: 54%; }
+
+.percentage{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 
 
