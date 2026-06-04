@@ -1,6 +1,6 @@
 /* 프로필 그룹 -*/
 .profile-group {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;      
     gap: 15px; 
@@ -136,15 +136,20 @@ display: flex;
 /* 학력 박스-*/
 
 .education-container{
-    background-color: #719E82;
-    width: 488px;
-    box-sizing: border-box;
-    height: 530px;
-    margin-left: 22vw;
-    margin-top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    gap: 15px; 
     padding: 60px 40px 60px 80px;
+    background-color: #719E82;
+    width: 100%;
+    max-width: 488px;         
     box-sizing: border-box;
+
+    margin: 0 auto 0 25vw; 
+    transform: translateX(-57px)
 }
+
 
 .education-title{
     color:#fff;
