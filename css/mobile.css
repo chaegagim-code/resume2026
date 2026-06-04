@@ -1,0 +1,105 @@
+/* 1280이상 Large 큰 모니터*/
+@media screen and (min-width: 1280px) {
+    /* Large 화면과 동일하게 유지되므로 비워둡니다. */
+}
+    
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Large 화면과 동일하게 유지되므로 비워둡니다. */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html body {
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center; 
+        padding: 30px; 
+        box-sizing: border-box;
+    }
+
+    /* 태블릿 스크린: 박스들을 세로 1줄로 정렬하되 너무 퍼지지 않게 600px 제한 */
+    body .profile-group,
+    body .personal-info-box,
+    body .education-container,
+    body .intro-container,
+    body .personality-container {
+        position: static; 
+        left: auto; top: auto; bottom: auto;
+        width: 100%;
+        max-width: 600px; 
+        margin-left: 0;
+        transform: none;
+        margin: 25px auto; 
+    }
+
+    body .personal-info-box { position: relative; }
+    body .personality-container { height: auto; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    html body {
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center; 
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* 모든 박스들의 여백과 좌표를 모바일용으로 리셋 */
+    body .profile-group,
+    body .personal-info-box,
+    body .education-container,
+    body .intro-container,
+    body .personality-container {
+        position: static; 
+        left: auto;
+        top: auto;
+        bottom: auto;
+        
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        transform: none;
+        margin: 0px auto; 
+    }
+
+    /* 성격 박스 고정 높이 해제 */
+    body .personality-container {
+        height: auto; 
+    }
+
+    /* 자기소개 박스 내부 여백 조절 */
+    body .cert-section,
+    body .intro-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    body .cert-title,
+    body .cert-content {
+        margin-left: 0;
+    }
+}
+
+/* 인적사항 밑 작대기만 선택해서 인적사항 전체 박스에 넣기 */
+    body .personal-info-box {
+        position: relative; 
+    }
+
+    /* 학력사항 글씨 */
+    body .education-container {
+        padding: 40px 20px;
+        align-items:center;
+    }
+
+    body .education-list{
+        padding-left: 15px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+
+
