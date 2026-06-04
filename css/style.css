@@ -283,8 +283,8 @@
     height: 580px;
 
     position: absolute;
-    left: 55vw;
-    top: 100px;
+    left: calc(25vw + 600px);
+    top: 80px;
     z-index: 1;
 }
 
