@@ -1,40 +1,55 @@
 /* 1280이상 Large 큰 모니터*/
 @media screen and (min-width: 1280px) {
-    /* Large 화면과 동일하게 유지되므로 비워둡니다. */
+    /* pc 화면과 동일하게 유지되므로 비워둡니다. */
 }
     
 
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    /* Large 화면과 동일하게 유지되므로 비워둡니다. */
-}
+    
+    html body {
+        transform: scale(0.85) translateX(-150px);
+        transform-origin: top center; 
+        width: 100%;
+        height: auto;
+        overflow: visible; 
+    }
+    html body .personal-info-box {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    html body .intro-container {
+        margin-left: -1px;
+        padding-top: 0;
+    }
+    }
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     html body {
         min-width: 100%;
         max-width: 100%;
         align-items: center; 
-        padding: 30px; 
+        padding: 0 30px; 
         box-sizing: border-box;
     }
 
     /* 태블릿 스크린: 박스들을 세로 1줄로 정렬하되 너무 퍼지지 않게 600px 제한 */
-    body .profile-group,
-    body .personal-info-box,
-    body .education-container,
-    body .intro-container,
-    body .personality-container {
+    html body .profile-group,
+    html body .personal-info-box,
+    html body .education-container,
+    html body .intro-container,
+    html body .personality-container {
         position: static; 
         left: auto; top: auto; bottom: auto;
         width: 100%;
         max-width: 600px; 
-        margin-left: 0;
         transform: none;
-        margin: 25px auto; 
+        margin: 0 auto;
     }
 
-    body .personal-info-box { position: relative; }
-    body .personality-container { height: auto; }
+    html body .personal-info-box { position: relative; }
+    html body .personality-container { height: auto; }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -92,7 +107,7 @@
     /* 학력사항 글씨 */
     body .education-container {
         padding: 40px 20px;
-        align-items:center;
+        align-items: center;
     }
 
     body .education-list{
