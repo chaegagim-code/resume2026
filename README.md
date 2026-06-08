@@ -10,6 +10,8 @@ html, reset.css, style.css, mobile.css
 프로젝트 목적 및 배경,
 개발자로서의 성장 방향성
 
+## 배포 주소
+https://chaegagim-code.github.io/resume2026/
 
 
 
